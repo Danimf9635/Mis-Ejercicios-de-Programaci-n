@@ -116,4 +116,23 @@ public class Operadores {
         System.out.println("El resultado de la evaluacion es que el candidato es "+resultadoCandidato);
         scanner.close();
     }
+
+    //EJEMPLO DE PORQUE SE PONE VOID EN LOS METODOS
+    public int multiplicacion(int op1,int op2){
+        //SI EN LUGAR DE PONER VOID PONER UN "INT" "STRING" ETC TE VA A PEDIR UN RETORNO DE LO QUE ESTAS PIDIDENDO
+        int resultado= op1*op2;
+        System.out.println(resultado);//ESTO SOLO MUESTRA LA IMPRESIÓN PERO NO RETORNA NADA AL PONER "VOID"
+        //PARA RETORNAR LO QUE SE PIDE SE PONE PALABRA "RETURN" AL FINAL DEL METODO ULTIMA LINEA
+        return 1;// con ese resultado que de se pued eemplear para mas( el resultado de la multplicacion ese numero podra usarse)
+
+    }
+
+    /*PASOS PARA REALIZAR UN EJERCICIO
+    1-PEDIR COSAS POR TECLADO
+    2- GUARDAR COSAS EN VARIABLES
+    3-REALIZAR CALCULOS
+    4-MOSTRAR INFORMACIÓN
+     */
+
+
 }

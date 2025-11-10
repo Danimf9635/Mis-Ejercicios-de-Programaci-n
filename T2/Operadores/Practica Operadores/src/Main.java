@@ -12,12 +12,19 @@ public class Main {
         //matematicas.operadoresRelacionales();
         //matematicas.operadoresLogicos();
         //matematicas.evaluarCandidatos();
+        //matematicas.multiplicacion(8,4);
 
 
         //EJERCICIOS T2 OPERADORES
         EjerciciosT2 operadores =new EjerciciosT2();
         //operadores.ejercicio1();
         //operadores.ejercicio2();
-        operadores.ejercicio3();
+        //operadores.ejercicio3();
+        //operadores.ejercicio4();
+        //operadores.ejercicio5();
+        //operadores.ejercicio6();
+        //operadores.ejercicio7();
+        //operadores.ejercicio8();
+        //operadores.ejercicio9();
     }
 }

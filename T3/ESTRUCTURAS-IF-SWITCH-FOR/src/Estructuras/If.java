@@ -254,6 +254,71 @@ public class If {
     }
 
     public void ejercicio9(){
+        teclado= new Scanner(System.in);
+        System.out.println("Introduce el primer numero:");
+        int numero1 = teclado.nextInt();
+        System.out.println("Introduce el segundo numero:");
+        int numero2 = teclado.nextInt();
+        if(numero1>numero2){
+            System.out.printf("El número %d es mayor que %d ",numero1,numero2);
+        }if(numero1<numero2){
+            System.out.printf("El numero %d es menor que %d ",numero1,numero2);
+        }if(numero1==numero2){
+                System.out.printf("El numero %d es igual que %d ",numero1,numero2);
+        }
+        teclado=null;
+    }
+
+    public void ejercicio10(){
+        teclado=new Scanner(System.in);
+        System.out.println("Introduce tu altura en cm");
+        double altura= teclado.nextDouble();
+        if(altura<120){
+            System.out.println("No puedes subir a la atracción. altura mínima 120 cm.");
+        }if(altura>=120 && altura<= 200){
+            System.out.println("Puedes subir, adelante máquina");
+        }if(altura>200){
+            System.out.println("No puedes subir a la atracción. Altura máxima 200cm.");
+        }
+        teclado=null;
+    }
+
+    public void ejercicio11(){
+        teclado=new Scanner(System.in);
+        System.out.println("Introduce el importe de la compra");
+        double compra= teclado.nextDouble();
+        System.out.println("¿Eres socio?: ");
+        boolean socio= teclado.nextBoolean();
+        System.out.println("Importe original: "+compra);
+
+        double descuento= 0.20;
+        double descuento2=0.10;
+        double descuento3= 0.05;
+        if(compra>=200 && socio){
+            descuento=descuento*compra;
+            double importeFinal = compra-descuento;
+            System.out.println("Eres socio y tu compra es >= 200");
+            System.out.println("Descuento aplicado (20%): "+descuento);
+            System.out.println("Importe final: "+importeFinal);
+        }if(compra<200 && socio){
+            descuento2=descuento2*compra;
+            double importeFinal = compra-descuento2;
+            System.out.println("Eres socio y tu compra es <200");
+            System.out.println("Descuento aplicado (10%): "+descuento2);
+            System.out.println("Importe final: "+importeFinal);
+        }if(compra>=300 && !socio){
+            descuento3=descuento3*compra;
+            double importeFinal= compra-descuento3;
+            System.out.println("No eres socio y tu compra es >=300");
+            System.out.println("Descuento aplicado (5%): "+descuento3);
+            System.out.println("Importe final: "+importeFinal);
+
+        } else{
+            System.out.println("No tienes descuento.");
+            System.out.println("Importe final: "+compra);
+
+        }
+        teclado=null;
 
     }
 }

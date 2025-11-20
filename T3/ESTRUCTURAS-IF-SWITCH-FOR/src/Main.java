@@ -8,7 +8,7 @@ public class Main {
     static void main() {
 
         If estructura= new If();
-       // estructura.parseo();
+        //estructura.parseo();
         //estructura.estructuraIf(7);
         //estructura.estructuraIFELSEIF(100);
         //estructura.ejercicio10T2();
@@ -22,7 +22,7 @@ public class Main {
         //estructura.ejercicio8();
         //estructura.ejercicio9();
         //estructura.ejercicio10();
-        estructura.ejercicio11();
+        //estructura.ejercicio11();
 
 
 
